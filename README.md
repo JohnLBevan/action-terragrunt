@@ -4,6 +4,11 @@
 [![Test Action](https://github.com/autero1/action-terragrunt/actions/workflows/test-action.yml/badge.svg?branch=main)](https://github.com/autero1/action-terragrunt/actions/workflows/test-action.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/autero1/action-terragrunt/badge)](https://www.codefactor.io/repository/github/autero1/action-terragrunt)
 
+# Note on Authorship
+
+This repo was forked from [autero1/action-terragrunt](https://github.com/autero1/action-terragrunt).
+I split the fork and began maintaining locally as there hadn't been any activity on autero1's account for ~2 years; implying that they're no longer actively developing.
+
 # Setup Terragrunt GitHub Action
 
 Set up your GitHub Actions workflow with a specific version of [Terragrunt](https://terragrunt.gruntwork.io/). You can optionally set version to `latest` to use the most recent version.
