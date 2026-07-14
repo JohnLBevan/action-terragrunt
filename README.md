@@ -1,13 +1,14 @@
-[![license](https://img.shields.io/github/license/autero1/action-terragrunt)](https://github.com/autero1/action-terragrunt/blob/main/LICENSE)
-[![release](https://img.shields.io/github/release/autero1/action-terragrunt.svg)](https://github.com/autero1/action-terragrunt/releases/latest)
-[![GitHub release date](https://img.shields.io/github/release-date/autero1/action-terragrunt.svg)](https://github.com/autero1/action-terragrunt/releases)
-[![Test Action](https://github.com/autero1/action-terragrunt/actions/workflows/test-action.yml/badge.svg?branch=main)](https://github.com/autero1/action-terragrunt/actions/workflows/test-action.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/autero1/action-terragrunt/badge)](https://www.codefactor.io/repository/github/autero1/action-terragrunt)
+[![license](https://img.shields.io/github/license/JohnLBevan/action-terragrunt)](https://github.com/JohnLBevan/action-terragrunt/blob/main/LICENSE)
+[![release](https://img.shields.io/github/release/JohnLBevan/action-terragrunt.svg)](https://github.com/JohnLBevan/action-terragrunt/releases/latest)
+[![GitHub release date](https://img.shields.io/github/release-date/JohnLBevan/action-terragrunt.svg)](https://github.com/JohnLBevan/action-terragrunt/releases)
+[![Test Action](https://github.com/JohnLBevan/action-terragrunt/actions/workflows/test-action.yml/badge.svg?branch=main)](https://github.com/JohnLBevan/action-terragrunt/actions/workflows/test-action.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/johnlbevan/action-terragrunt/badge)](https://www.codefactor.io/repository/github/johnlbevan/action-terragrunt)
 
 # Note on Authorship
 
 This repo was forked from [autero1/action-terragrunt](https://github.com/autero1/action-terragrunt).
 I split the fork and began maintaining locally as there hadn't been any activity on autero1's account for ~2 years; implying that they're no longer actively developing.
+Versions from `v4.0.0` onwards are released from this repository; all credit for the original work (up to `v3.x`) belongs to the original author.
 
 # Setup Terragrunt GitHub Action
 
@@ -36,9 +37,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
       - name: Setup Terragrunt
-        uses: autero1/action-terragrunt@v3
+        uses: JohnLBevan/action-terragrunt@v4
         with:
           terragrunt-version: 0.55.2
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -58,9 +59,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
       - name: Setup Terragrunt
-        uses: autero1/action-terragrunt@v3
+        uses: JohnLBevan/action-terragrunt@v4
         with:
           terragrunt-version-file: .terragrunt-version
           token: ${{ secrets.GITHUB_TOKEN }}
