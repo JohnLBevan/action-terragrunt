@@ -19,7 +19,7 @@
   "scripts": {
     "lint": "eslint ./{src,test}/**/*.ts",
     "lint:fix": "eslint --fix ./{src,test}/**/*.ts",
-    "test": "glob \"src/**/*.test.ts\" \"test/**\" -c \"tsx --test\"",
+    "test": "glob \"src/**/*.test.ts\" \"test/**/*.ts\" -c \"tsx --test\"",
     "build": "ncc build ./src/index.ts -o lib",
     "tsc": "tsc",
     "format": "prettier --write **/*.ts",
