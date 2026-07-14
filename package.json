@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/autero1/action-terragrunt.git"
+    "url": "git+https://github.com/JohnLBevan/action-terragrunt.git"
   },
   "keywords": [
     "GitHub Actions",

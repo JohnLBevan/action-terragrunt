@@ -7,12 +7,14 @@ jobs:
   test-release-version:
     runs-on: "ubuntu-22.04"
     steps:
-      - uses: autero1/action-terragrunt@v3
+
+      - uses: JohnLBevan/action-terragrunt@v4
         with:
           terragrunt-version: 0.55.0
       - name: Validate
         run: terragrunt --version
-      - uses: autero1/action-terragrunt@v3
+
+      - uses: JohnLBevan/action-terragrunt@v4
         with:
           terragrunt-version: latest
       - name: Validate
