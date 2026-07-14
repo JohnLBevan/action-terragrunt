@@ -55,3 +55,5 @@ jobs:
         run: npm run build
 
       - run: npm test
+        env:
+          INPUT_TOKEN: ${{ github.token }}
